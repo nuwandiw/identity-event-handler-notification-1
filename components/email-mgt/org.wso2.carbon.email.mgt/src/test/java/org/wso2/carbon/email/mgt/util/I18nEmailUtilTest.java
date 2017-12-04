@@ -19,7 +19,6 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.mockito.Mock;
 import org.powermock.core.classloader.annotations.PrepareForTest;
-import org.powermock.modules.testng.PowerMockTestCase;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -43,7 +42,7 @@ import static org.wso2.carbon.email.mgt.constants.I18nMgtConstants.TEMPLATE_TYPE
 import static org.wso2.carbon.email.mgt.constants.I18nMgtConstants.TEMPLATE_TYPE_DISPLAY_NAME;
 
 @PrepareForTest({LogFactory.class, Resource.class})
-public class I18nEmailUtilTest extends PowerMockTestCase {
+public class I18nEmailUtilTest {
 
     private static final String DISPLAY_NAME = "Display Name";
     private static final String TYPE = "templateType";
